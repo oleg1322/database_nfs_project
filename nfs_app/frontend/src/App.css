@@ -1,0 +1,80 @@
+/* frontend/src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  position: fixed;
+  width: 200px;
+  background: linear-gradient(to right, #0077be, #0096c7);
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  background-color: #005f73;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #e0e0e0;
+  margin-left: 240px;
+}
+
+h2 {
+  color: #005f73;
+}
+
+select, button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin: 0 10px;
+  background: linear-gradient(to right, #0077be, #0096c7);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to right, #005f73, #0077be);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #005f73;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}

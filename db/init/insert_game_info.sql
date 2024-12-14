@@ -1,0 +1,23 @@
+DELETE FROM general_information;
+INSERT INTO general_information (id, game_name, studio, release_year, platforms) VALUES
+(1, 'Need for Speed', 'Electronic Arts', 1994, '3DO, DOS, PlayStation, Sega Saturn'),
+(2, 'Need for Speed II', 'Electronic Arts', 1997, 'PlayStation, PC'),
+(3, 'Need for Speed III: Hot Pursuit', 'Electronic Arts', 1998, 'PlayStation, PC'),
+(4, 'Need for Speed: High Stakes', 'Electronic Arts', 1999, 'PlayStation, PC'),
+(5, 'Need for Speed: Porsche Unleashed', 'Electronic Arts', 2000, 'PC'),
+(6, 'Need for Speed: Hot Pursuit 2', 'Electronic Arts', 2002, 'PlayStation 2, Xbox, GameCube, PC'),
+(7, 'Need for Speed: Underground', 'Electronic Arts', 2003, 'PlayStation 2, Xbox, GameCube, PC'),
+(8, 'Need for Speed: Underground 2', 'Electronic Arts', 2004, 'PlayStation 2, Xbox, GameCube, PC'),
+(9, 'Need for Speed: Most Wanted', 'Electronic Arts', 2005, 'PlayStation 2, Xbox, GameCube, PC'),
+(10, 'Need for Speed: Carbon', 'Electronic Arts', 2006, 'PlayStation 2, Xbox, Xbox 360, GameCube, PC'),
+(11, 'Need for Speed: ProStreet', 'Electronic Arts', 2007, 'PlayStation 2, PlayStation 3, Xbox 360, Wii, PC'),
+(12, 'Need for Speed: Undercover', 'Electronic Arts', 2008, 'PlayStation 2, PlayStation 3, Xbox 360, Wii, PC'),
+(13, 'Need for Speed: Shift', 'Electronic Arts', 2009, 'PlayStation 3, Xbox 360, PC'),
+(14, 'Need for Speed: Hot Pursuit', 'Criterion Games', 2010, 'PlayStation 3, Xbox 360, PC'),
+(15, 'Need for Speed: The Run', 'Electronic Arts', 2011, 'PlayStation 3, Xbox 360, PC'),
+(16, 'Need for Speed: Most Wanted (2012)', 'Criterion Games', 2012, 'PlayStation 3, Xbox 360, PC'),
+(17, 'Need for Speed: Rivals', 'Ghost Games', 2013, 'PlayStation 3, PlayStation 4, Xbox 360, Xbox One, PC'),
+(18, 'Need for Speed (2015)', 'Ghost Games', 2015, 'PlayStation 4, Xbox One, PC'),
+(19, 'Need for Speed: Payback', 'Ghost Games', 2017, 'PlayStation 4, Xbox One, PC'),
+(20, 'Need for Speed: Heat', 'Ghost Games', 2019, 'PlayStation 4, Xbox One, PC'),
+(21, 'Need for Speed: Unbound', 'Criterion Games', 2022, 'PlayStation 5, Xbox X, PC');
