@@ -1,6 +1,6 @@
-CREATE OR REPLACE FUNCTION create_new_car(
-    car_name TEXT,
-    car_model TEXT,
+CREATE OR REPLACE PROCEDURE create_new_car(
+    car_name VARCHAR,
+    car_model VARCHAR,
     max_speed INT,
     acceleration NUMERIC,
     mass INT,
@@ -8,10 +8,12 @@ CREATE OR REPLACE FUNCTION create_new_car(
     horsepower INT,
     fuel_consumption NUMERIC,
     price MONEY,
-    country TEXT
-) RETURNS VOID AS $$
+    country VARCHAR
+) LANGUAGE plpgsql AS $$
 BEGIN
     INSERT INTO cars_general_info (car_name, car_model, max_speed, acceleration, mass, engine_volume, horsepower, fuel_consumption, price, country)
     VALUES (car_name, car_model, max_speed, acceleration, mass, engine_volume, horsepower, fuel_consumption, price, country);
 END;
-$$ LANGUAGE plpgsql;
+$$;
+
+

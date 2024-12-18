@@ -71,7 +71,13 @@ const CarList: React.FC = () => {
         <button onClick={fetchCars}>Показать все</button>
         <ul>
           {cars.map(car => (
-            <li key={car.id}>{car.car_name} {car.car_model}</li>
+            <li key={car.id}>
+              <strong>{car.car_name} {car.car_model}</strong>
+              <p>Страна: {car.country}</p>
+              <p>Макс. скорость: {car.max_speed} км/ч</p>
+              <p>Ускорение до 100 км/ч: {car.acceleration} сек</p>
+              {car.price? <p>Цена: {car.price} руб</p> : <p>Недоступна на российском рынке</p>}
+            </li>
           ))}
         </ul>
       </div>
